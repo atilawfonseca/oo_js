@@ -1,10 +1,9 @@
-const Viagem = require('./viagem');
 
-function Pessoa(nome, idade, sobrenome, endereco){
+function Pessoa(nome, idade, sobrenome){
+
     let _nome = nome; 
     let _idade = idade; 
     let _sobrenome = sobrenome; 
-    let _endereco = endereco; 
     
     this.setNome = function(nome){
         _nome = nome; 
@@ -26,13 +25,6 @@ function Pessoa(nome, idade, sobrenome, endereco){
     }
     this.getSobrenome = function(){
         return _sobrenome; 
-    }
-
-    this.setEndereco = function(endereco){
-        _endereco = endereco; 
-    }
-    this.getEndereco = function(){
-        return _endereco; 
     }
 }
 
